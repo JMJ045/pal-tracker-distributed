@@ -1,4 +1,3 @@
-Starting a Gradle Daemon, 3 busy and 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
 
 > Task :buildSrc:compileGroovy
 
@@ -69,13 +68,14 @@ compile - Dependencies for source set 'main' (deprecated, use 'implementation' i
 |    \--- io.micrometer:micrometer-core:1.0.7
 |         +--- org.hdrhistogram:HdrHistogram:2.1.10
 |         \--- org.latencyutils:LatencyUtils:2.0.3
-+--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE
++--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE
 |    +--- org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.RELEASE
 |    |    +--- org.springframework.cloud:spring-cloud-starter:2.0.0.RELEASE
 |    |    |    +--- org.springframework.boot:spring-boot-starter:2.0.3.RELEASE -> 2.0.6.RELEASE (*)
 |    |    |    +--- org.springframework.cloud:spring-cloud-context:2.0.0.RELEASE
 |    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
-|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE -> 5.0.9.RELEASE FAILED
+|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE
+|    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
 |    |    |    \--- org.springframework.security:spring-security-rsa:1.0.5.RELEASE
 |    |    |         \--- org.bouncycastle:bcpkix-jdk15on:1.56
 |    |    |              \--- org.bouncycastle:bcprov-jdk15on:1.56
@@ -238,14 +238,14 @@ compile - Dependencies for source set 'main' (deprecated, use 'implementation' i
 |    |    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.25
 |    |    |    \--- com.netflix.archaius:archaius-core:0.7.4 -> 0.7.6 (*)
 |    |    \--- com.thoughtworks.xstream:xstream:1.4.10 (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE
 |    |    |    +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |    |    \--- org.springframework:spring-core:5.0.7.RELEASE -> 5.0.10.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-cloudfoundry-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         \--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-spring-service-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
 |    |         \--- org.springframework:spring-context:5.0.0.RELEASE -> 5.0.10.RELEASE (*)
@@ -293,10 +293,10 @@ compile - Dependencies for source set 'main' (deprecated, use 'implementation' i
 |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
 |    +--- org.slf4j:slf4j-api:1.7.25
 |    +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
 |    +--- org.springframework:spring-web:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
 |    +--- org.springframework:spring-context:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
-|    \--- org.springframework.cloud:spring-cloud-commons:5.0.9.RELEASE FAILED
+|    \--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE (*)
 +--- org.springframework.boot:spring-boot-starter-web -> 2.0.6.RELEASE
 |    +--- org.springframework.boot:spring-boot-starter:2.0.6.RELEASE (*)
 |    +--- org.springframework.boot:spring-boot-starter-json:2.0.6.RELEASE
@@ -333,7 +333,7 @@ compile - Dependencies for source set 'main' (deprecated, use 'implementation' i
      +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
      +--- org.slf4j:slf4j-api:1.7.25
      +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
      +--- project :components:rest-support (*)
      \--- org.springframework:spring-jdbc:5.0.9.RELEASE -> 5.0.10.RELEASE
           +--- org.springframework:spring-beans:5.0.10.RELEASE (*)
@@ -391,13 +391,14 @@ compileClasspath - Compile classpath for source set 'main'.
 |    \--- io.micrometer:micrometer-core:1.0.7
 |         +--- org.hdrhistogram:HdrHistogram:2.1.10
 |         \--- org.latencyutils:LatencyUtils:2.0.3
-+--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE
++--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE
 |    +--- org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.RELEASE
 |    |    +--- org.springframework.cloud:spring-cloud-starter:2.0.0.RELEASE
 |    |    |    +--- org.springframework.boot:spring-boot-starter:2.0.3.RELEASE -> 2.0.6.RELEASE (*)
 |    |    |    +--- org.springframework.cloud:spring-cloud-context:2.0.0.RELEASE
 |    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
-|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE -> 5.0.9.RELEASE FAILED
+|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE
+|    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
 |    |    |    \--- org.springframework.security:spring-security-rsa:1.0.5.RELEASE
 |    |    |         \--- org.bouncycastle:bcpkix-jdk15on:1.56
 |    |    |              \--- org.bouncycastle:bcprov-jdk15on:1.56
@@ -560,14 +561,14 @@ compileClasspath - Compile classpath for source set 'main'.
 |    |    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.25
 |    |    |    \--- com.netflix.archaius:archaius-core:0.7.4 -> 0.7.6 (*)
 |    |    \--- com.thoughtworks.xstream:xstream:1.4.10 (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE
 |    |    |    +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |    |    \--- org.springframework:spring-core:5.0.7.RELEASE -> 5.0.10.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-cloudfoundry-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         \--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-spring-service-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
 |    |         \--- org.springframework:spring-context:5.0.0.RELEASE -> 5.0.10.RELEASE (*)
@@ -615,10 +616,10 @@ compileClasspath - Compile classpath for source set 'main'.
 |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
 |    +--- org.slf4j:slf4j-api:1.7.25
 |    +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
 |    +--- org.springframework:spring-web:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
 |    +--- org.springframework:spring-context:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
-|    \--- org.springframework.cloud:spring-cloud-commons:5.0.9.RELEASE FAILED
+|    \--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE (*)
 +--- org.springframework.boot:spring-boot-starter-web -> 2.0.6.RELEASE
 |    +--- org.springframework.boot:spring-boot-starter:2.0.6.RELEASE (*)
 |    +--- org.springframework.boot:spring-boot-starter-json:2.0.6.RELEASE
@@ -655,7 +656,7 @@ compileClasspath - Compile classpath for source set 'main'.
      +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
      +--- org.slf4j:slf4j-api:1.7.25
      +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
      +--- project :components:rest-support (*)
      \--- org.springframework:spring-jdbc:5.0.9.RELEASE -> 5.0.10.RELEASE
           +--- org.springframework:spring-beans:5.0.10.RELEASE (*)
@@ -716,13 +717,14 @@ default - Configuration for default artifacts.
 |    \--- io.micrometer:micrometer-core:1.0.7
 |         +--- org.hdrhistogram:HdrHistogram:2.1.10
 |         \--- org.latencyutils:LatencyUtils:2.0.3
-+--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE
++--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE
 |    +--- org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.RELEASE
 |    |    +--- org.springframework.cloud:spring-cloud-starter:2.0.0.RELEASE
 |    |    |    +--- org.springframework.boot:spring-boot-starter:2.0.3.RELEASE -> 2.0.6.RELEASE (*)
 |    |    |    +--- org.springframework.cloud:spring-cloud-context:2.0.0.RELEASE
 |    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
-|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE -> 5.0.9.RELEASE FAILED
+|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE
+|    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
 |    |    |    \--- org.springframework.security:spring-security-rsa:1.0.5.RELEASE
 |    |    |         \--- org.bouncycastle:bcpkix-jdk15on:1.56
 |    |    |              \--- org.bouncycastle:bcprov-jdk15on:1.56
@@ -885,14 +887,14 @@ default - Configuration for default artifacts.
 |    |    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.25
 |    |    |    \--- com.netflix.archaius:archaius-core:0.7.4 -> 0.7.6 (*)
 |    |    \--- com.thoughtworks.xstream:xstream:1.4.10 (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE
 |    |    |    +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |    |    \--- org.springframework:spring-core:5.0.7.RELEASE -> 5.0.10.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-cloudfoundry-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         \--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-spring-service-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
 |    |         \--- org.springframework:spring-context:5.0.0.RELEASE -> 5.0.10.RELEASE (*)
@@ -940,10 +942,10 @@ default - Configuration for default artifacts.
 |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
 |    +--- org.slf4j:slf4j-api:1.7.25
 |    +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
 |    +--- org.springframework:spring-web:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
 |    +--- org.springframework:spring-context:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
-|    \--- org.springframework.cloud:spring-cloud-commons:5.0.9.RELEASE FAILED
+|    \--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE (*)
 +--- org.springframework.boot:spring-boot-starter-web -> 2.0.6.RELEASE
 |    +--- org.springframework.boot:spring-boot-starter:2.0.6.RELEASE (*)
 |    +--- org.springframework.boot:spring-boot-starter-json:2.0.6.RELEASE
@@ -980,7 +982,7 @@ default - Configuration for default artifacts.
      +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
      +--- org.slf4j:slf4j-api:1.7.25
      +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
      +--- project :components:rest-support (*)
      \--- org.springframework:spring-jdbc:5.0.9.RELEASE -> 5.0.10.RELEASE
           +--- org.springframework:spring-beans:5.0.10.RELEASE (*)
@@ -1041,13 +1043,14 @@ runtime - Runtime dependencies for source set 'main' (deprecated, use 'runtimeOn
 |    \--- io.micrometer:micrometer-core:1.0.7
 |         +--- org.hdrhistogram:HdrHistogram:2.1.10
 |         \--- org.latencyutils:LatencyUtils:2.0.3
-+--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE
++--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE
 |    +--- org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.RELEASE
 |    |    +--- org.springframework.cloud:spring-cloud-starter:2.0.0.RELEASE
 |    |    |    +--- org.springframework.boot:spring-boot-starter:2.0.3.RELEASE -> 2.0.6.RELEASE (*)
 |    |    |    +--- org.springframework.cloud:spring-cloud-context:2.0.0.RELEASE
 |    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
-|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE -> 5.0.9.RELEASE FAILED
+|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE
+|    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
 |    |    |    \--- org.springframework.security:spring-security-rsa:1.0.5.RELEASE
 |    |    |         \--- org.bouncycastle:bcpkix-jdk15on:1.56
 |    |    |              \--- org.bouncycastle:bcprov-jdk15on:1.56
@@ -1210,14 +1213,14 @@ runtime - Runtime dependencies for source set 'main' (deprecated, use 'runtimeOn
 |    |    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.25
 |    |    |    \--- com.netflix.archaius:archaius-core:0.7.4 -> 0.7.6 (*)
 |    |    \--- com.thoughtworks.xstream:xstream:1.4.10 (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE
 |    |    |    +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |    |    \--- org.springframework:spring-core:5.0.7.RELEASE -> 5.0.10.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-cloudfoundry-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         \--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-spring-service-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
 |    |         \--- org.springframework:spring-context:5.0.0.RELEASE -> 5.0.10.RELEASE (*)
@@ -1265,10 +1268,10 @@ runtime - Runtime dependencies for source set 'main' (deprecated, use 'runtimeOn
 |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
 |    +--- org.slf4j:slf4j-api:1.7.25
 |    +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
 |    +--- org.springframework:spring-web:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
 |    +--- org.springframework:spring-context:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
-|    \--- org.springframework.cloud:spring-cloud-commons:5.0.9.RELEASE FAILED
+|    \--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE (*)
 +--- org.springframework.boot:spring-boot-starter-web -> 2.0.6.RELEASE
 |    +--- org.springframework.boot:spring-boot-starter:2.0.6.RELEASE (*)
 |    +--- org.springframework.boot:spring-boot-starter-json:2.0.6.RELEASE
@@ -1305,7 +1308,7 @@ runtime - Runtime dependencies for source set 'main' (deprecated, use 'runtimeOn
      +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
      +--- org.slf4j:slf4j-api:1.7.25
      +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
      +--- project :components:rest-support (*)
      \--- org.springframework:spring-jdbc:5.0.9.RELEASE -> 5.0.10.RELEASE
           +--- org.springframework:spring-beans:5.0.10.RELEASE (*)
@@ -1363,13 +1366,14 @@ runtimeClasspath - Runtime classpath of source set 'main'.
 |    \--- io.micrometer:micrometer-core:1.0.7
 |         +--- org.hdrhistogram:HdrHistogram:2.1.10
 |         \--- org.latencyutils:LatencyUtils:2.0.3
-+--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE
++--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE
 |    +--- org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.RELEASE
 |    |    +--- org.springframework.cloud:spring-cloud-starter:2.0.0.RELEASE
 |    |    |    +--- org.springframework.boot:spring-boot-starter:2.0.3.RELEASE -> 2.0.6.RELEASE (*)
 |    |    |    +--- org.springframework.cloud:spring-cloud-context:2.0.0.RELEASE
 |    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
-|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE -> 5.0.9.RELEASE FAILED
+|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE
+|    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
 |    |    |    \--- org.springframework.security:spring-security-rsa:1.0.5.RELEASE
 |    |    |         \--- org.bouncycastle:bcpkix-jdk15on:1.56
 |    |    |              \--- org.bouncycastle:bcprov-jdk15on:1.56
@@ -1532,14 +1536,14 @@ runtimeClasspath - Runtime classpath of source set 'main'.
 |    |    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.25
 |    |    |    \--- com.netflix.archaius:archaius-core:0.7.4 -> 0.7.6 (*)
 |    |    \--- com.thoughtworks.xstream:xstream:1.4.10 (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE
 |    |    |    +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |    |    \--- org.springframework:spring-core:5.0.7.RELEASE -> 5.0.10.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-cloudfoundry-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         \--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-spring-service-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
 |    |         \--- org.springframework:spring-context:5.0.0.RELEASE -> 5.0.10.RELEASE (*)
@@ -1587,10 +1591,10 @@ runtimeClasspath - Runtime classpath of source set 'main'.
 |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
 |    +--- org.slf4j:slf4j-api:1.7.25
 |    +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
 |    +--- org.springframework:spring-web:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
 |    +--- org.springframework:spring-context:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
-|    \--- org.springframework.cloud:spring-cloud-commons:5.0.9.RELEASE FAILED
+|    \--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE (*)
 +--- org.springframework.boot:spring-boot-starter-web -> 2.0.6.RELEASE
 |    +--- org.springframework.boot:spring-boot-starter:2.0.6.RELEASE (*)
 |    +--- org.springframework.boot:spring-boot-starter-json:2.0.6.RELEASE
@@ -1627,7 +1631,7 @@ runtimeClasspath - Runtime classpath of source set 'main'.
      +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
      +--- org.slf4j:slf4j-api:1.7.25
      +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
      +--- project :components:rest-support (*)
      \--- org.springframework:spring-jdbc:5.0.9.RELEASE -> 5.0.10.RELEASE
           +--- org.springframework:spring-beans:5.0.10.RELEASE (*)
@@ -1694,13 +1698,14 @@ testCompile - Dependencies for source set 'test' (deprecated, use 'testImplement
 |    \--- io.micrometer:micrometer-core:1.0.7
 |         +--- org.hdrhistogram:HdrHistogram:2.1.10
 |         \--- org.latencyutils:LatencyUtils:2.0.3
-+--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE
++--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE
 |    +--- org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.RELEASE
 |    |    +--- org.springframework.cloud:spring-cloud-starter:2.0.0.RELEASE
 |    |    |    +--- org.springframework.boot:spring-boot-starter:2.0.3.RELEASE -> 2.0.6.RELEASE (*)
 |    |    |    +--- org.springframework.cloud:spring-cloud-context:2.0.0.RELEASE
 |    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
-|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE -> 5.0.9.RELEASE FAILED
+|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE
+|    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
 |    |    |    \--- org.springframework.security:spring-security-rsa:1.0.5.RELEASE
 |    |    |         \--- org.bouncycastle:bcpkix-jdk15on:1.56
 |    |    |              \--- org.bouncycastle:bcprov-jdk15on:1.56
@@ -1863,14 +1868,14 @@ testCompile - Dependencies for source set 'test' (deprecated, use 'testImplement
 |    |    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.25
 |    |    |    \--- com.netflix.archaius:archaius-core:0.7.4 -> 0.7.6 (*)
 |    |    \--- com.thoughtworks.xstream:xstream:1.4.10 (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE
 |    |    |    +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |    |    \--- org.springframework:spring-core:5.0.7.RELEASE -> 5.0.10.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-cloudfoundry-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         \--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-spring-service-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
 |    |         \--- org.springframework:spring-context:5.0.0.RELEASE -> 5.0.10.RELEASE (*)
@@ -1918,10 +1923,10 @@ testCompile - Dependencies for source set 'test' (deprecated, use 'testImplement
 |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
 |    +--- org.slf4j:slf4j-api:1.7.25
 |    +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
 |    +--- org.springframework:spring-web:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
 |    +--- org.springframework:spring-context:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
-|    \--- org.springframework.cloud:spring-cloud-commons:5.0.9.RELEASE FAILED
+|    \--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE (*)
 +--- org.springframework.boot:spring-boot-starter-web -> 2.0.6.RELEASE
 |    +--- org.springframework.boot:spring-boot-starter:2.0.6.RELEASE (*)
 |    +--- org.springframework.boot:spring-boot-starter-json:2.0.6.RELEASE
@@ -1958,7 +1963,7 @@ testCompile - Dependencies for source set 'test' (deprecated, use 'testImplement
 |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
 |    +--- org.slf4j:slf4j-api:1.7.25
 |    +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
 |    +--- project :components:rest-support (*)
 |    \--- org.springframework:spring-jdbc:5.0.9.RELEASE -> 5.0.10.RELEASE
 |         +--- org.springframework:spring-beans:5.0.10.RELEASE (*)
@@ -1979,7 +1984,7 @@ testCompile - Dependencies for source set 'test' (deprecated, use 'testImplement
      +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
      +--- org.slf4j:slf4j-api:1.7.25
      +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
      +--- project :components:rest-support (*)
      +--- org.springframework:spring-jdbc:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
      +--- mysql:mysql-connector-java:8.0.13 (*)
@@ -2034,13 +2039,14 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    \--- io.micrometer:micrometer-core:1.0.7
 |         +--- org.hdrhistogram:HdrHistogram:2.1.10
 |         \--- org.latencyutils:LatencyUtils:2.0.3
-+--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE
++--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE
 |    +--- org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.RELEASE
 |    |    +--- org.springframework.cloud:spring-cloud-starter:2.0.0.RELEASE
 |    |    |    +--- org.springframework.boot:spring-boot-starter:2.0.3.RELEASE -> 2.0.6.RELEASE (*)
 |    |    |    +--- org.springframework.cloud:spring-cloud-context:2.0.0.RELEASE
 |    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
-|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE -> 5.0.9.RELEASE FAILED
+|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE
+|    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
 |    |    |    \--- org.springframework.security:spring-security-rsa:1.0.5.RELEASE
 |    |    |         \--- org.bouncycastle:bcpkix-jdk15on:1.56
 |    |    |              \--- org.bouncycastle:bcprov-jdk15on:1.56
@@ -2203,14 +2209,14 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    |    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.25
 |    |    |    \--- com.netflix.archaius:archaius-core:0.7.4 -> 0.7.6 (*)
 |    |    \--- com.thoughtworks.xstream:xstream:1.4.10 (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE
 |    |    |    +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |    |    \--- org.springframework:spring-core:5.0.7.RELEASE -> 5.0.10.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-cloudfoundry-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         \--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-spring-service-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
 |    |         \--- org.springframework:spring-context:5.0.0.RELEASE -> 5.0.10.RELEASE (*)
@@ -2258,10 +2264,10 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
 |    +--- org.slf4j:slf4j-api:1.7.25
 |    +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
 |    +--- org.springframework:spring-web:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
 |    +--- org.springframework:spring-context:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
-|    \--- org.springframework.cloud:spring-cloud-commons:5.0.9.RELEASE FAILED
+|    \--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE (*)
 +--- org.springframework.boot:spring-boot-starter-web -> 2.0.6.RELEASE
 |    +--- org.springframework.boot:spring-boot-starter:2.0.6.RELEASE (*)
 |    +--- org.springframework.boot:spring-boot-starter-json:2.0.6.RELEASE
@@ -2298,7 +2304,7 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
 |    +--- org.slf4j:slf4j-api:1.7.25
 |    +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
 |    +--- project :components:rest-support (*)
 |    \--- org.springframework:spring-jdbc:5.0.9.RELEASE -> 5.0.10.RELEASE
 |         +--- org.springframework:spring-beans:5.0.10.RELEASE (*)
@@ -2319,7 +2325,7 @@ testCompileClasspath - Compile classpath for source set 'test'.
      +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
      +--- org.slf4j:slf4j-api:1.7.25
      +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
      +--- project :components:rest-support (*)
      +--- org.springframework:spring-jdbc:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
      +--- mysql:mysql-connector-java:8.0.13 (*)
@@ -2380,13 +2386,14 @@ testRuntime - Runtime dependencies for source set 'test' (deprecated, use 'testR
 |    \--- io.micrometer:micrometer-core:1.0.7
 |         +--- org.hdrhistogram:HdrHistogram:2.1.10
 |         \--- org.latencyutils:LatencyUtils:2.0.3
-+--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE
++--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE
 |    +--- org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.RELEASE
 |    |    +--- org.springframework.cloud:spring-cloud-starter:2.0.0.RELEASE
 |    |    |    +--- org.springframework.boot:spring-boot-starter:2.0.3.RELEASE -> 2.0.6.RELEASE (*)
 |    |    |    +--- org.springframework.cloud:spring-cloud-context:2.0.0.RELEASE
 |    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
-|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE -> 5.0.9.RELEASE FAILED
+|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE
+|    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
 |    |    |    \--- org.springframework.security:spring-security-rsa:1.0.5.RELEASE
 |    |    |         \--- org.bouncycastle:bcpkix-jdk15on:1.56
 |    |    |              \--- org.bouncycastle:bcprov-jdk15on:1.56
@@ -2549,14 +2556,14 @@ testRuntime - Runtime dependencies for source set 'test' (deprecated, use 'testR
 |    |    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.25
 |    |    |    \--- com.netflix.archaius:archaius-core:0.7.4 -> 0.7.6 (*)
 |    |    \--- com.thoughtworks.xstream:xstream:1.4.10 (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE
 |    |    |    +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |    |    \--- org.springframework:spring-core:5.0.7.RELEASE -> 5.0.10.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-cloudfoundry-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         \--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-spring-service-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
 |    |         \--- org.springframework:spring-context:5.0.0.RELEASE -> 5.0.10.RELEASE (*)
@@ -2604,10 +2611,10 @@ testRuntime - Runtime dependencies for source set 'test' (deprecated, use 'testR
 |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
 |    +--- org.slf4j:slf4j-api:1.7.25
 |    +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
 |    +--- org.springframework:spring-web:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
 |    +--- org.springframework:spring-context:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
-|    \--- org.springframework.cloud:spring-cloud-commons:5.0.9.RELEASE FAILED
+|    \--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE (*)
 +--- org.springframework.boot:spring-boot-starter-web -> 2.0.6.RELEASE
 |    +--- org.springframework.boot:spring-boot-starter:2.0.6.RELEASE (*)
 |    +--- org.springframework.boot:spring-boot-starter-json:2.0.6.RELEASE
@@ -2644,7 +2651,7 @@ testRuntime - Runtime dependencies for source set 'test' (deprecated, use 'testR
 |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
 |    +--- org.slf4j:slf4j-api:1.7.25
 |    +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
 |    +--- project :components:rest-support (*)
 |    \--- org.springframework:spring-jdbc:5.0.9.RELEASE -> 5.0.10.RELEASE
 |         +--- org.springframework:spring-beans:5.0.10.RELEASE (*)
@@ -2665,7 +2672,7 @@ testRuntime - Runtime dependencies for source set 'test' (deprecated, use 'testR
      +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
      +--- org.slf4j:slf4j-api:1.7.25
      +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
      +--- project :components:rest-support (*)
      +--- org.springframework:spring-jdbc:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
      +--- mysql:mysql-connector-java:8.0.13 (*)
@@ -2720,13 +2727,14 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    \--- io.micrometer:micrometer-core:1.0.7
 |         +--- org.hdrhistogram:HdrHistogram:2.1.10
 |         \--- org.latencyutils:LatencyUtils:2.0.3
-+--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE
++--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE
 |    +--- org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.RELEASE
 |    |    +--- org.springframework.cloud:spring-cloud-starter:2.0.0.RELEASE
 |    |    |    +--- org.springframework.boot:spring-boot-starter:2.0.3.RELEASE -> 2.0.6.RELEASE (*)
 |    |    |    +--- org.springframework.cloud:spring-cloud-context:2.0.0.RELEASE
 |    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
-|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE -> 5.0.9.RELEASE FAILED
+|    |    |    +--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE
+|    |    |    |    \--- org.springframework.security:spring-security-crypto:5.0.6.RELEASE -> 5.0.9.RELEASE
 |    |    |    \--- org.springframework.security:spring-security-rsa:1.0.5.RELEASE
 |    |    |         \--- org.bouncycastle:bcpkix-jdk15on:1.56
 |    |    |              \--- org.bouncycastle:bcprov-jdk15on:1.56
@@ -2889,14 +2897,14 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    |    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.25
 |    |    |    \--- com.netflix.archaius:archaius-core:0.7.4 -> 0.7.6 (*)
 |    |    \--- com.thoughtworks.xstream:xstream:1.4.10 (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE
 |    |    |    +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |    |    \--- org.springframework:spring-core:5.0.7.RELEASE -> 5.0.10.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-cloudfoundry-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         \--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.0.RELEASE
-|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-spring-connector:2.0.2.RELEASE
+|    |    +--- io.pivotal.spring.cloud:spring-cloud-services-connector-core:2.0.2.RELEASE (*)
 |    |    \--- org.springframework.cloud:spring-cloud-spring-service-connector:2.0.2.RELEASE -> 2.0.3.RELEASE
 |    |         +--- org.springframework.cloud:spring-cloud-connectors-core:2.0.3.RELEASE
 |    |         \--- org.springframework:spring-context:5.0.0.RELEASE -> 5.0.10.RELEASE (*)
@@ -2944,10 +2952,10 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
 |    +--- org.slf4j:slf4j-api:1.7.25
 |    +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
 |    +--- org.springframework:spring-web:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
 |    +--- org.springframework:spring-context:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
-|    \--- org.springframework.cloud:spring-cloud-commons:5.0.9.RELEASE FAILED
+|    \--- org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE (*)
 +--- org.springframework.boot:spring-boot-starter-web -> 2.0.6.RELEASE
 |    +--- org.springframework.boot:spring-boot-starter:2.0.6.RELEASE (*)
 |    +--- org.springframework.boot:spring-boot-starter-json:2.0.6.RELEASE
@@ -2984,7 +2992,7 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
 |    +--- org.slf4j:slf4j-api:1.7.25
 |    +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+|    +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
 |    +--- project :components:rest-support (*)
 |    \--- org.springframework:spring-jdbc:5.0.9.RELEASE -> 5.0.10.RELEASE
 |         +--- org.springframework:spring-beans:5.0.10.RELEASE (*)
@@ -3005,7 +3013,7 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
      +--- com.fasterxml.jackson.core:jackson-annotations:2.9.7
      +--- org.slf4j:slf4j-api:1.7.25
      +--- org.springframework.boot:spring-boot-starter-actuator -> 2.0.6.RELEASE (*)
-     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.0.RELEASE (*)
+     +--- io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry -> 2.0.2.RELEASE (*)
      +--- project :components:rest-support (*)
      +--- org.springframework:spring-jdbc:5.0.9.RELEASE -> 5.0.10.RELEASE (*)
      +--- mysql:mysql-connector-java:8.0.13 (*)
@@ -3018,5 +3026,5 @@ No dependencies
 
 A web-based, searchable dependency report is available by adding the --scan option.
 
-BUILD SUCCESSFUL in 30s
+BUILD SUCCESSFUL in 16s
 1 actionable task: 1 executed
